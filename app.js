@@ -95,6 +95,17 @@ const diseases = {
     "Cystic fibrosis is a genetic disorder that affects the lungs and digestive system. It leads to thick, sticky mucus production, causing respiratory and digestive problems.",
   huntington_disease:
     "Huntington's disease is a genetic disorder that causes progressive degeneration of nerve cells in the brain. It leads to motor dysfunction, cognitive decline, and behavioral changes.",
+  flu: "The flu, also known as influenza, is a contagious respiratory illness caused by influenza viruses. It can cause mild to severe illness and sometimes lead to hospitalization or death.",
+  common_cold:
+    "The common cold is a viral infection of the upper respiratory tract. It is characterized by symptoms such as sore throat, runny nose, coughing, and sneezing.",
+  rabies:
+    "Rabies is a viral disease that affects the central nervous system. It is transmitted through the bite of an infected animal and can be fatal if not treated promptly.",
+  herpes:
+    "Herpes is a viral infection caused by herpes simplex viruses. It can cause cold sores on the mouth or genitals and, in some cases, lead to more severe complications.",
+  hypothermia:
+    "Hypothermia occurs when the body loses heat faster than it can produce it, causing a dangerously low body temperature. It can result in confusion, shivering, and loss of consciousness.",
+  mrsa: "MRSA (Methicillin-Resistant Staphylococcus Aureus) is a type of bacteria that is resistant to many antibiotics. It can cause skin infections and, in severe cases, lead to bloodstream infections and pneumonia.",
+  h1n1: "H1N1, also known as the swine flu, is a subtype of influenza A virus. It caused a global pandemic in 2009. Symptoms are similar to those of regular flu and can range from mild to severe.",
 };
 
 const submittedStrings = [];
