@@ -11,6 +11,8 @@ app.use(cors());
 const diseases = {
   covid_19:
     "COVID-19 is a highly contagious respiratory illness caused by the SARS-CoV-2 virus. It can cause severe respiratory symptoms and, in some cases, lead to pneumonia and organ failure.",
+  covid19:
+    "COVID-19 is a highly contagious respiratory illness caused by the SARS-CoV-2 virus. It can cause severe respiratory symptoms and, in some cases, lead to pneumonia and organ failure.",
   cancer:
     "Cancer is a group of diseases characterized by the uncontrolled growth and spread of abnormal cells. There are various types of cancer, each with specific symptoms and treatments.",
   diabetes:
@@ -71,10 +73,16 @@ const diseases = {
     "Lupus is an autoimmune disease in which the immune system attacks healthy tissues and organs. It can cause joint pain, skin rashes, fatigue, and organ damage.",
   migraines:
     "Migraines are severe headaches that can cause throbbing pain, nausea, and sensitivity to light and sound. They can last for hours or even days.",
+  migraine:
+    "Migraines are severe headaches that can cause throbbing pain, nausea, and sensitivity to light and sound. They can last for hours or even days.",
   multiple_sclerosis_ms:
-    "MS is a chronic autoimmune disease that affects the central nervous system. It can cause fatigue, difficulty walking, numbness, and problems with coordination and balance.",
+    "MS(mutiple sclerosis) is a chronic autoimmune disease that affects the central nervous system. It can cause fatigue, difficulty walking, numbness, and problems with coordination and balance.",
+  ms: "MS(mutiple sclerosis)is a chronic autoimmune disease that affects the central nervous system. It can cause fatigue, difficulty walking, numbness, and problems with coordination and balance.",
   obsessive_compulsive_disorder_ocd:
     "OCD is a mental health disorder characterized by obsessive thoughts and compulsive behaviors. Individuals with OCD may engage in repetitive rituals to alleviate anxiety.",
+  obsessive_compulsive_disorder:
+    "OCD is a mental health disorder characterized by obsessive thoughts and compulsive behaviors. Individuals with OCD may engage in repetitive rituals to alleviate anxiety.",
+  ocd: "OCD(obsessive compulsive disorder) is a mental health disorder characterized by obsessive thoughts and compulsive behaviors. Individuals with OCD may engage in repetitive rituals to alleviate anxiety.",
   psoriasis:
     "Psoriasis is a skin condition that causes cells to build up rapidly on the surface of the skin. It results in red, itchy, and scaly patches. Psoriasis is a chronic autoimmune disease.",
   rheumatoid_arthritis:
@@ -97,6 +105,8 @@ const diseases = {
     "Huntington's disease is a genetic disorder that causes progressive degeneration of nerve cells in the brain. It leads to motor dysfunction, cognitive decline, and behavioral changes.",
   flu: "The flu, also known as influenza, is a contagious respiratory illness caused by influenza viruses. It can cause mild to severe illness and sometimes lead to hospitalization or death.",
   common_cold:
+    "The common cold is a viral infection of the upper respiratory tract. It is characterized by symptoms such as sore throat, runny nose, coughing, and sneezing.",
+  the_common_cold:
     "The common cold is a viral infection of the upper respiratory tract. It is characterized by symptoms such as sore throat, runny nose, coughing, and sneezing.",
   rabies:
     "Rabies is a viral disease that affects the central nervous system. It is transmitted through the bite of an infected animal and can be fatal if not treated promptly.",
@@ -148,6 +158,8 @@ const diseases = {
     "Eczema, also known as atopic dermatitis, is a skin condition characterized by red, itchy, and inflamed skin. It often occurs in response to allergens or irritants.",
   hives:
     "Hives, or urticaria, are raised, itchy welts on the skin that often result from an allergic reaction to food, medication, or other triggers.",
+  dermatitis:
+    "Dermatitis refers to inflammation of the skin, resulting in redness, itching, and often a rash. It can have various causes, including allergic reactions to substances like certain soaps, chemicals, or plants (contact dermatitis), or non-allergic factors such as irritants, dry skin, or genetic predisposition. Dermatitis can appear in different forms, such as eczema, seborrheic dermatitis, or atopic dermatitis. Proper identification of the cause and management, which may include avoiding triggers, using topical treatments, and moisturizing, are crucial in alleviating symptoms and preventing flare-ups.",
   dyslexia:
     "Dyslexia is a learning disorder that affects reading, spelling, and writing abilities. It is not related to intelligence and often requires specialized teaching methods.",
   myopia:
@@ -438,6 +450,8 @@ const diseases = {
     "Typhoid fever is a bacterial infection caused by Salmonella typhi. It leads to high fever, abdominal pain, and gastrointestinal symptoms. Vaccination and proper hygiene can prevent the disease.",
   trench_mouth:
     "Trench mouth, or acute necrotizing ulcerative gingivitis (ANUG), is a severe gum infection causing painful, bleeding gums and ulcers. It can occur during times of stress or poor oral hygiene.",
+  gingivitis:
+    "Gingivitis is a common and mild form of gum disease (periodontal disease) that causes irritation, redness, and swelling (inflammation) of the gingiva, the part of the gum around the base of the teeth. It is usually caused by the accumulation of plaque—a sticky film of bacteria—on teeth. Gingivitis can lead to gum bleeding, bad breath, and, if left untreated, can progress to more severe forms of gum disease. Good oral hygiene practices, including regular brushing, flossing, and professional dental cleanings, are essential in preventing and treating gingivitis.",
   valley_fever:
     "Valley fever, or coccidioidomycosis, is a fungal infection caused by inhaling spores of Coccidioides fungi. It can cause flu-like symptoms and, in severe cases, affect the lungs and other organs.",
   creutzfeldt_jakob_disease_cjd:
@@ -678,6 +692,8 @@ const diseases = {
     "Body dysmorphic disorder (BDD) is a mental health condition characterized by obsessive preoccupation with perceived defects or flaws in physical appearance, which are not observable to others. It can lead to severe emotional distress.",
   enuresis:
     "Enuresis, or bedwetting, is a childhood disorder characterized by involuntary urination during sleep. It is more common in boys and can be caused by various factors, including delayed development of bladder control.",
+  atherosclerosis:
+    "Atherosclerosis is a cardiovascular condition characterized by the accumulation of plaque, primarily made of cholesterol, fat, and other substances, on the inner walls of arteries. Over time, this buildup narrows the arteries and restricts blood flow, leading to various heart-related problems such as heart attacks and strokes.",
   encopresis:
     "Encopresis is a childhood disorder characterized by the repeated passage of feces into inappropriate places, such as clothing or the floor. It is usually involuntary and may be caused by constipation or emotional factors.",
   feeding_and_eating_disorders_of_infancy_or_early_childhood:
@@ -916,6 +932,8 @@ const diseases = {
     "Insomnia is a common sleep disorder characterized by difficulty falling asleep, staying asleep, or both. It can lead to daytime fatigue, irritability, and impaired functioning.",
   restless_legs_syndrome:
     "Restless legs syndrome (RLS) is a neurological disorder characterized by uncomfortable sensations in the legs, leading to an irresistible urge to move them. Symptoms worsen during periods of rest or inactivity.",
+  hyperlipidemia:
+    "Hyperlipidemia is a medical condition characterized by abnormally high levels of lipids (fats) in the blood. These lipids include cholesterol and triglycerides. Hyperlipidemia increases the risk of developing atherosclerosis and other cardiovascular diseases. It can be caused by genetic factors, poor diet, lack of exercise, and certain medical conditions. Management often involves lifestyle changes, such as adopting a healthy diet, regular exercise, and in some cases, medication.",
   periodic_limb_movement_disorder:
     "Periodic limb movement disorder (PLMD) is a sleep disorder characterized by repetitive limb movements, usually involving the legs, during sleep. It can cause frequent awakenings and disrupt sleep.",
   rapid_eye_movement_sleep_behavior_disorder:
@@ -1376,6 +1394,8 @@ const diseases = {
     "Paranoid personality disorder is a mental health condition characterized by a pervasive distrust and suspicion of others, even when there is no reason to be suspicious. People with this disorder often interpret others' actions as hostile.",
   schizoid_personality_disorder:
     "Schizoid personality disorder is a mental health condition characterized by a lack of interest in social relationships, a limited range of emotional expression, and a preference for solitary activities.",
+  kwashiorkor:
+    "Kwashiorkor is a severe form of malnutrition, often seen in children, caused by a deficiency of protein in the diet. It is characterized by swelling (edema), especially in the belly, along with skin and hair changes. Children with kwashiorkor may experience stunted growth, weakened immune system, and overall developmental issues due to insufficient protein intake.",
   schizotypal_personality_disorder:
     "Schizotypal personality disorder is a mental health condition characterized by odd or eccentric behavior, unconventional beliefs, and difficulties in forming and maintaining relationships.",
   dissociative_amnesia:
@@ -1404,6 +1424,8 @@ const diseases = {
   avoidant_restrictive_food_intake_disorder:
     "Avoidant/restrictive food intake disorder (ARFID) is an eating disorder characterized by highly selective eating habits, avoidance of certain foods or textures, and sensory sensitivity. It can lead to nutritional deficiencies and impaired social functioning.",
   anorexia_nervosa:
+    "Anorexia nervosa is an eating disorder characterized by an intense fear of gaining weight and a distorted body image, leading to self-imposed starvation and excessive weight loss. It can have severe physical and psychological consequences.",
+  anorexia:
     "Anorexia nervosa is an eating disorder characterized by an intense fear of gaining weight and a distorted body image, leading to self-imposed starvation and excessive weight loss. It can have severe physical and psychological consequences.",
   bulimia_nervosa:
     "Bulimia nervosa is an eating disorder characterized by recurrent episodes of binge eating, followed by compensatory behaviors such as self-induced vomiting, excessive exercise, or fasting. It can have serious health implications.",
@@ -1439,12 +1461,16 @@ const diseases = {
     "Pneumothorax is a condition where air leaks into the space between the lung and the chest wall, causing the lung to collapse partially or completely. It can result in chest pain and difficulty breathing.",
   pleural_effusion:
     "Pleural effusion is the buildup of excess fluid between the layers of the pleura, the double membrane surrounding the lungs. It can compress the lungs, leading to breathing difficulties and chest pain.",
+  contact_dermatitis:
+    "Contact dermatitis is a type of skin inflammation that occurs when the skin comes into direct contact with an irritant or allergen. Irritant contact dermatitis is caused by substances like detergents, acids, or solvents, irritating the skin. Allergic contact dermatitis, on the other hand, results from an allergic reaction to substances like certain metals, plants, or chemicals. Symptoms include redness, itching, swelling, and blisters in the affected area. Avoiding the trigger, keeping the skin clean and dry, and using topical treatments like corticosteroid creams are common approaches to manage contact dermatitis.",
   obstructive_sleep_apnea:
     "Obstructive sleep apnea is a sleep disorder where breathing is briefly and repeatedly interrupted during sleep. It can lead to loud snoring, gasping for air, and daytime sleepiness.",
   narcolepsy:
     "Narcolepsy is a neurological disorder that affects the control of sleep and wakefulness. It can cause sudden attacks of sleep, muscle weakness, and hallucinations.",
   insomnia:
     "Insomnia is a common sleep disorder characterized by difficulty falling asleep, staying asleep, or both. It can lead to daytime fatigue, irritability, and impaired functioning.",
+  topical_steroid_withdrawal:
+    "Topical steroid withdrawal (TSW) is a challenging skin condition that occurs when individuals who have been using topical steroids, such as corticosteroid creams or ointments, for an extended period suddenly stop using them. TSW is characterized by a severe and often painful flare-up of symptoms, including redness, burning, itching, and skin sensitivity. These symptoms can affect the areas where the steroids were applied and sometimes spread to other parts of the body. TSW occurs as the body adapts to the absence of steroids and can last for weeks to months. Management involves supportive care, moisturizing, and sometimes the use of non-steroidal treatments under medical supervision.",
   restless_legs_syndrome:
     "Restless legs syndrome (RLS) is a neurological disorder characterized by uncomfortable sensations in the legs, leading to an irresistible urge to move them. Symptoms worsen during periods of rest or inactivity.",
   periodic_limb_movement_disorder:
@@ -1516,7 +1542,10 @@ const submittedStrings = [];
 app.post("/input", (req, res) => {
   const { body } = req;
   const { input } = body;
-  const sanitizedInput = input.replace(/ /g, "_").toLowerCase(); // Replace spaces with underscores and convert to lowercase
+  const sanitizedInput = input
+    .replace(/ /g, "_")
+    .replace(/-/g, "_")
+    .toLowerCase(); // Replace spaces with underscores and convert to lowercase
   submittedStrings.push(sanitizedInput);
 
   const diseaseDescription = diseases[sanitizedInput];
