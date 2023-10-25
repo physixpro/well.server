@@ -1,16 +1,17 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const getDiseases = require("./diseaseDatabase");
 
 const app = express();
 const PORT = 9000;
-const getDiseases = require("./diseaseDatabase"); // Here I imported the diseases function
+
 app.use(bodyParser.json());
 app.use(cors());
 
-const submittedStrings = [];
-
 const diseases = getDiseases();
+
+const submittedStrings = [];
 
 app.post("/input", (req, res) => {
   const { body } = req;
@@ -24,14 +25,19 @@ app.post("/input", (req, res) => {
   const diseaseDescription = diseases[sanitizedInput];
   if (diseaseDescription) {
     res.status(200).json({ description: diseaseDescription });
+    //console.log("truthy description,displays description if there is a matching pair", diseaseDescription);
   } else {
     res.status(200).json({ description: "No description found." });
+    // console.log(
+    //   "falsy description,i.e. no matching string",
+    //   diseaseDescription
+    // );
   }
 });
 
 app.get("/query", (req, res) => {
   const { key } = req.query;
-  const sanitizedKey = key.replace(/ /g, "_").toLowerCase(); // Replace spaces with underscores and convert to lowercase
+  const sanitizedKey = key.replace(/ /g, "_").replace(/-/g, "_").toLowerCase(); // Replace spaces with underscores and convert to lowercase
   const count = submittedStrings.filter((str) => str === sanitizedKey).length;
   res.status(200).send(count.toString());
 });

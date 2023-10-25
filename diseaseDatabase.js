@@ -1,6 +1,8 @@
 const diseases = {
   covid_19:
     "COVID-19 is a highly contagious respiratory illness caused by the SARS-CoV-2 virus. It can cause severe respiratory symptoms and, in some cases, lead to pneumonia and organ failure.",
+  covid:
+    "COVID-19 is a highly contagious respiratory illness caused by the SARS-CoV-2 virus. It can cause severe respiratory symptoms and, in some cases, lead to pneumonia and organ failure.",
   covid19:
     "COVID-19 is a highly contagious respiratory illness caused by the SARS-CoV-2 virus. It can cause severe respiratory symptoms and, in some cases, lead to pneumonia and organ failure.",
   cancer:
