@@ -32,6 +32,7 @@ async function connectToMongoDB() {
 connectToMongoDB();
 
 app.post("/input", async (req, res) => {
+  console.log("Received input request:", req.body); // Add this line
   const { body } = req;
   const { input } = body;
   const sanitizedInput = input
@@ -41,19 +42,24 @@ app.post("/input", async (req, res) => {
 
   try {
     // Retrieve disease description from MongoDB
+    console.log("Before querying MongoDB");
     const diseaseDocument = await diseasesCollection.findOne({
       name: sanitizedInput,
     });
+    console.log("After querying MongoDB");
 
     if (diseaseDocument) {
+      console.log("Found disease document:", diseaseDocument); // Add this line
       res.status(200).json({ description: diseaseDocument.description });
     } else {
+      console.log("No disease document found"); // Add this line
       res.status(200).json({ description: "No description found." });
     }
   } catch (error) {
     console.error("Error retrieving data from MongoDB:", error);
     res.status(500).json({ error: "Internal server error" });
   }
+  console.log("Responded to input request"); // Add this line
 });
 
 app.get("/query", (req, res) => {
