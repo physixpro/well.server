@@ -22,7 +22,7 @@ async function insertData() {
     const diseases = getDiseases();
 
     // Convert the diseases object into an array of documents
-    const documents = Object.entries(diseases).map(([name, description]) => ({
+    const documents = diseases.map(({ name, description }) => ({
       name,
       description,
     }));
