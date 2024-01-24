@@ -22,9 +22,10 @@ async function insertData() {
     const diseases = getDiseases();
 
     // Convert the diseases object into an array of documents
-    const documents = diseases.map(({ name, description }) => ({
+    const documents = diseases.map(({ name, description, nutrients }) => ({
       name,
       description,
+      nutrients,
     }));
 
     // Insert the documents into the MongoDB collection

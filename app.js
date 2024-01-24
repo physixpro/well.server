@@ -50,7 +50,12 @@ app.post("/input", async (req, res) => {
 
     if (diseaseDocument) {
       console.log("Found disease document:", diseaseDocument); // Add this line
-      res.status(200).json({ description: diseaseDocument.description });
+      res
+        .status(200)
+        .json({
+          description: diseaseDocument.description,
+          nutrients: diseaseDocument.nutrients,
+        });
     } else {
       console.log("No disease document found"); // Add this line
       res.status(200).json({ description: "No description found." });
