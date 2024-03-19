@@ -11,7 +11,6 @@ async function insertData() {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
-
   try {
     await client.connect();
     console.log("Connected to MongoDB Atlas");
@@ -22,11 +21,14 @@ async function insertData() {
     const diseases = getDiseases();
 
     // Convert the diseases object into an array of documents
-    const documents = diseases.map(({ name, description, nutrients }) => ({
-      name,
-      description,
-      nutrients,
-    }));
+    const documents = diseases.map(
+      ({ name, description, nutrients, imageUrl }) => ({
+        name,
+        description,
+        nutrients,
+        imageUrl,
+      })
+    );
 
     // Insert the documents into the MongoDB collection
     const result = await collection.insertMany(documents);
